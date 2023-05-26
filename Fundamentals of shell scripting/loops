@@ -1,0 +1,57 @@
+
+Tyes of loops available to shell programmers
+
+The while loop
+The for loop
+The until loop
+The select loop
+
+
+1. while
+
+while comand
+do
+   Statement(s) to be executed if command is true
+done
+
+
+------------------------------------------------------------------
+
+2. for
+
+for var in 0 1 2 3 4 5 6 7 8 9
+do
+   echo $var
+done
+
+---------------------------------------------------------------
+
+3. until loop
+
+until command
+do
+   Statement(s) to be executed until command is true
+done
+
+---------------------------------------------------------------------
+
+4. select
+
+select DRINK in tea cofee water juice appe all none
+do
+   case $DRINK in
+      tea|cofee|water|all) 
+         echo "Go to canteen"
+         ;;
+      juice|appe)
+         echo "Available at home"
+      ;;
+      none) 
+         break 
+      ;;
+      *) echo "ERROR: Invalid selection" 
+      ;;
+   esac
+done
+
+------------------------------------------------------------------
